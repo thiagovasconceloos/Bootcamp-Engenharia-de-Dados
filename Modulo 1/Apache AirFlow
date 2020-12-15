@@ -1,27 +1,27 @@
-<h1><b>Install Air Flow in the SubSystem Linux WSL</h1></b>
+Install Air Flow in the SubSystem Linux WSL
 
-<b><br>sudo apt-get install software-properties-common</b>
-<b>sudo apt-add-repository universe<br></b>
-<b>sudo apt-get update<br></b>
-<b>sudo apt-get install python-pip<br></b>
+sudo apt-get install software-properties-common
+sudo apt-add-repository universe
+sudo apt-get update
+sudo apt-get install python-pip
 
 
-<b># airflow needs a home, ~/airflow is the default,<br>
+# airflow needs a home, ~/airflow is the default,
 # but you can lay foundation somewhere else if you prefer
 # (optional)
-<b>export AIRFLOW_HOME=~/airflow<br></b>
+export AIRFLOW_HOME=~/airflow
 
 # install from pypi using pip
-<b>pip install apache-airflow</b><br>
+pip install apache-airflow
 
 # initialize the database
-<b>airflow initdb</br></b>
+airflow initdb
 
 # start the web server, default port is 8080
-<b>airflow webserver -p 8080</br></b>
+airflow webserver -p 8080
 
 # start the scheduler
-<b>airflow scheduler<br></b>
+airflow scheduler
 
 # visit localhost:8080 in the browser and enable the example dag in the home page
 Note
