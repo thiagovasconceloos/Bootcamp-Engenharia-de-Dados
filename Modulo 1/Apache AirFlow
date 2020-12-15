@@ -1,0 +1,29 @@
+<h1><b>Install Air Flow in the SubSystem Linux WSL</h1></b>
+
+<b><br>sudo apt-get install software-properties-common</b>
+<b>sudo apt-add-repository universe<br></b>
+<b>sudo apt-get update<br></b>
+<b>sudo apt-get install python-pip<br></b>
+
+
+<b># airflow needs a home, ~/airflow is the default,<br>
+# but you can lay foundation somewhere else if you prefer
+# (optional)
+<b>export AIRFLOW_HOME=~/airflow<br></b>
+
+# install from pypi using pip
+<b>pip install apache-airflow</b><br>
+
+# initialize the database
+<b>airflow initdb</br></b>
+
+# start the web server, default port is 8080
+<b>airflow webserver -p 8080</br></b>
+
+# start the scheduler
+<b>airflow scheduler<br></b>
+
+# visit localhost:8080 in the browser and enable the example dag in the home page
+Note
+
+On November 2020, new version of PIP (20.3) has been released with a new, 2020 resolver. This resolver does not yet work with Apache Airflow and might leads to errors in installation - depends on your choice of extras. In order to install Airflow you need to either downgrade pip to version 20.2.4 pip upgrade --pip==20.2.4 or, in case you use Pip 20.3, you need to add option --use-deprecated legacy-resolver to your pip install
