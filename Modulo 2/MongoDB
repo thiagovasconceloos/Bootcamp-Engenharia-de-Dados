@@ -44,3 +44,11 @@ Quail foi o nome do livro que tem o título começado pela letra “G”?
 Comando: db.livros.find({isbn:{$lte:"1617200000"}},{title:1}).pretty()
 R: Graphics File Formats
 
+
+Considere a prática número 10, em que usamos o comando skip(). O quê esse comando fez no resultado da consulta?
+Comando: db.livros.find({isbn:{$lte: "100000"}}).pretty().skip(2)
+R: A consulta retornou 3 documentos.
+
+Considere a prática número 11, em que foi feita a consulta db.livros.find({title: /Windows/}).count().
+Referente aos títulos retornados, qual a palavra comum observada em todos eles?
+R: Windows
