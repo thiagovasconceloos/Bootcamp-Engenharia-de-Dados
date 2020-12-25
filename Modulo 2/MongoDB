@@ -39,3 +39,8 @@ Comando:  db.livros.find({isbn:{$lte:"1617200000"}}).count()
 R: 22
 
 
+Considere a prática número 6, em que você precisou consultar o nome dos livros com a tag isbn menor ou igual a "1617200000". 
+Quail foi o nome do livro que tem o título começado pela letra “G”?
+Comando: db.livros.find({isbn:{$lte:"1617200000"}},{title:1}).pretty()
+R: Graphics File Formats
+
