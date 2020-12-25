@@ -1,8 +1,13 @@
+Mostrar DB's
+show dbs
+
+
 Criando o DB
 use aula
 
 Criando a collection
 db.createCollection(“livros”)
+
 
 
 Inserindo dados na collection "Livros"
