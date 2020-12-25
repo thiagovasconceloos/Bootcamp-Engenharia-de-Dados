@@ -1,0 +1,34 @@
+Inserindo dados na collection "Livros"
+mongoimport --db="aula" --collection="livros" --
+file="C:\Users\vasco\Downloads\books.json"
+
+
+Exercicios resolvidos trabalho pratico modulo 2
+
+Para que serve a ferramenta MogoDB Compass?
+R: Permite explorar os dados de forma visual. 
+
+Pela prática executada, quantos títulos foram carregados na collection livros?
+Comando: db.livros.find().count()
+R: 431
+
+
+Em qual das categorias de banco de dados NoSQL abaixo se enquadra o MongoDB?
+R: Orientado a Documentos. 
+
+
+Pelo prompt de comando do MongoDB, como se deleta um database? 
+R: Você precisa utilizar o database pelo comando use <database> e executar o comando db.dropDatabase().
+
+Pelo prompt de comando do MongoDB, o que acontece se tentarmos executar um drop em uma collection que não existe? 
+R:   Retorna a mensagem “false”. 
+
+Considere a prática número 4, em que você precisou consultar os livros com a tag isbn menor ou igual a “1000000000”. Quantos livros a consulta retornou?
+Comando: db.livros.find({isbn:{$lte:"1000000000"}}).count()
+R: 4
+
+Considere a prática número 5, em que você precisou consultar os livros com a tag isbn menor ou igual a "1617200000". Quantos livros a consulta retornou?
+Comando:  db.livros.find({isbn:{$lte:"1617200000"}}).count()
+R: 22
+
+
