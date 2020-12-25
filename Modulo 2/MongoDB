@@ -1,3 +1,10 @@
+Criando o DB
+use aula
+
+Criando a collection
+db.createCollection(“livros”)
+
+
 Inserindo dados na collection "Livros"
 mongoimport --db="aula" --collection="livros" --
 file="C:\Users\vasco\Downloads\books.json"
